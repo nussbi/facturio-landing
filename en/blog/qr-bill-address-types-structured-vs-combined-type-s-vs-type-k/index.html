@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QR-Bill Address Types: Structured vs. Combined (Type S vs. Type K) — facturio.ch</title>
+<meta name="description" content="The QR-bill standard distinguishes two address formats. One is now mandatory — and getting it wrong breaks scanning."/>
+<link rel="alternate" hreflang="en" href="https://facturio.ch/blog/qr-bill-address-types-structured-vs-combined-type-s-vs-type-k/"/><link rel="alternate" hreflang="de-CH" href="https://facturio.ch/blog/de/adresstypen-der-qr-rechnung-strukturiert-vs-kombiniert-typ-s-vs-typ-k/"/><link rel="alternate" hreflang="fr-CH" href="https://facturio.ch/blog/fr/types-d-adresse-de-la-qr-facture-structuree-ou-combinee-type-s-ou-type-k/"/><link rel="alternate" hreflang="it-CH" href="https://facturio.ch/blog/it/tipi-di-indirizzo-nella-qr-fattura-strutturato-vs-combinato-tipo-s-vs-tipo-k/"/><link rel="alternate" hreflang="x-default" href="https://facturio.ch/blog/qr-bill-address-types-structured-vs-combined-type-s-vs-type-k/"/><link rel="canonical" href="https://facturio.ch/blog/qr-bill-address-types-structured-vs-combined-type-s-vs-type-k/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="facturio.ch"/>
+<meta property="og:title" content="QR-Bill Address Types: Structured vs. Combined (Type S vs. Type K) — facturio.ch"/>
+<meta property="og:description" content="The QR-bill standard distinguishes two address formats. One is now mandatory — and getting it wrong breaks scanning."/>
+<meta property="og:url" content="https://facturio.ch/blog/qr-bill-address-types-structured-vs-combined-type-s-vs-type-k/"/>
+<meta property="og:locale" content="en-US"/>
+<meta property="og:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="QR-Bill Address Types: Structured vs. Combined (Type S vs. Type K) — facturio.ch"/>
+<meta name="twitter:description" content="The QR-bill standard distinguishes two address formats. One is now mandatory — and getting it wrong breaks scanning."/>
+<meta name="twitter:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"QR-Bill Address Types: Structured vs. Combined (Type S vs. Type K)","description":"The QR-bill standard distinguishes two address formats. One is now mandatory — and getting it wrong breaks scanning.","datePublished":"2026-09-07","dateModified":"2026-09-07","inLanguage":"en","author":{"@type":"Organization","name":"facturio.ch"},"publisher":{"@type":"Organization","name":"facturio.ch"},"mainEntityOfPage":"https://facturio.ch/blog/qr-bill-address-types-structured-vs-combined-type-s-vs-type-k/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"/>
+<link rel="stylesheet" href="/blog/blog.css"/>
+<style>
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVC3DC5J');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PFMBN2Z6X"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9PFMBN2Z6X');
+</script>
+<!-- End Google Analytics -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVC3DC5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="sh-placeholder"></div>
+<script src="/assets/header-block.js" defer></script>
+<main class="blog">
+  <div class="container">
+    <a class="breadcrumb" href="/blog/">← All articles</a>
+    <article class="post">
+      <h1>QR-Bill Address Types: Structured vs. Combined (Type S vs. Type K)</h1>
+      <div class="meta">September 7, 2026 · facturio.ch</div>
+      <p>QR-bills encode addresses in two ways: structured (type S) and combined (type K). Since late 2025, only structured addresses are reliably accepted.</p>
+<h2>Structured (type S)</h2>
+<p>The address is split into separate fields: name, street, house number, postcode, city and country. This is the format the standard now requires in the QR code.</p>
+<p>Splitting the fields lets a paying app validate each part against postal data, which is why structured addresses scan and process reliably.</p>
+<p>In the QR payload, each element is delimited on its own line, so the receiving system knows exactly which part is the street and which is the city.</p>
+<p>This is the format your customer records should store, so that every QR-bill you generate carries structured addresses without further effort.</p>
+<ul>
+<li>Name, street, house number, postcode, city, country — each in its own field.</li>
+</ul>
+<h2>Combined (type K)</h2>
+<p>The address sits in fewer free-text lines, like “Musterstrasse 12, 8000 Zürich” in one field. Convenient for printing, but it is no longer accepted in the machine-readable data.</p>
+<p>The combined format was a legacy convenience that merged the address into one or two unstructured lines.</p>
+<p>Since late 2025, combined addresses are no longer valid in the QR-bill’s data. A QR-bill built on a combined address fails the standard and may not scan.</p>
+<p>The change applies to the data in the QR code. The printed address on the invoice itself can still be formatted however you like, as long as the encoded data is structured.</p>
+<h2>Why it matters</h2>
+<p>A QR-bill can look perfectly fine while its underlying address data is combined, and then fail to scan. The visual appearance tells you nothing about the data format.</p>
+<p>When an address is combined, the receiving bank cannot reliably parse it, which is why the standard now rejects it outright.</p>
+<p>The failure shows up only at payment time, when the customer’s app refuses the code or misreads the address. By then the invoice has already been sent.</p>
+<p>For businesses that still hold addresses as free-text lines, the fix is to migrate the data, not to patch individual invoices.</p>
+<h2>Migrating to structured addresses</h2>
+<p>Split every address into structured fields in your customer records: name, street, house number, postcode, city and country. Do it once per client, then let the software generate compliant data.</p>
+<p>Pay attention to the house number as its own field. The Swiss standard expects it separate from the street name, and merging them into one field is a common source of failure.</p>
+<p>For foreign addresses, keep the country field correct, since the structured format includes the country as a distinct element.</p>
+<p>After migrating, regenerate and scan-test one QR-bill to confirm the structured data is being emitted correctly before you rely on it for the whole client base.</p>
+<ul>
+<li>Structured (type S) is now required in the QR data.</li>
+<li>Combined (type K) is no longer accepted in the QR code.</li>
+<li>Store name, street, house number, postcode, city, country separately.</li>
+<li>The printed address can still be formatted freely.</li>
+</ul>
+      <div class="cta">
+  <h3>Create compliant Swiss QR-bills in minutes</h3>
+  <p>facturio.ch generates SIX-compliant QR-bills with every invoice — so you can focus on your work, not the paperwork.</p>
+  <a href="https://app.facturio.ch/login" class="btn">Start free</a>
+</div>
+    </article>
+  </div>
+</main><footer class="site">
+  <div class="inner">
+    <span class="copy">© 2026 facturio.ch — Swiss QR invoicing</span>
+    <span class="copy"><a href="https://strongwinds.ch" style="text-decoration:underline;text-underline-offset:2px">strongwinds.ch</a></span>
+    <a href="https://app.facturio.ch/login" class="grad" style="font-weight:600">Start for Free</a>
+  </div>
+</footer>
+
+</body>
+</html>

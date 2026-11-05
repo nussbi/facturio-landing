@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Schémas alternatifs de la QR-facture : à quoi sert ce champ — facturio.ch</title>
+<meta name="description" content="Le champ « schémas alternatifs » d’une QR-facture prend en charge d’autres moyens de paiement. Voici à quoi il sert et quand l’utiliser."/>
+<link rel="alternate" hreflang="en" href="https://facturio.ch/en/blog/schemas-alternatifs-de-la-qr-facture-a-quoi-sert-ce-champ/"/>
+<link rel="alternate" hreflang="de-CH" href="https://facturio.ch/de/blog/schemas-alternatifs-de-la-qr-facture-a-quoi-sert-ce-champ/"/>
+<link rel="alternate" hreflang="fr-CH" href="https://facturio.ch/fr/blog/schemas-alternatifs-de-la-qr-facture-a-quoi-sert-ce-champ/"/>
+<link rel="alternate" hreflang="it-CH" href="https://facturio.ch/it/blog/schemas-alternatifs-de-la-qr-facture-a-quoi-sert-ce-champ/"/>
+<link rel="alternate" hreflang="x-default" href="https://facturio.ch/en/blog/schemas-alternatifs-de-la-qr-facture-a-quoi-sert-ce-champ/"/>
+<link rel="canonical" href="https://facturio.ch/fr/blog/schemas-alternatifs-de-la-qr-facture-a-quoi-sert-ce-champ/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="facturio.ch"/>
+<meta property="og:title" content="Schémas alternatifs de la QR-facture : à quoi sert ce champ — facturio.ch"/>
+<meta property="og:description" content="Le champ « schémas alternatifs » d’une QR-facture prend en charge d’autres moyens de paiement. Voici à quoi il sert et quand l’utiliser."/>
+<meta property="og:url" content="https://facturio.ch/blog/fr/schemas-alternatifs-de-la-qr-facture-a-quoi-sert-ce-champ/"/>
+<meta property="og:locale" content="fr"/>
+<meta property="og:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Schémas alternatifs de la QR-facture : à quoi sert ce champ — facturio.ch"/>
+<meta name="twitter:description" content="Le champ « schémas alternatifs » d’une QR-facture prend en charge d’autres moyens de paiement. Voici à quoi il sert et quand l’utiliser."/>
+<meta name="twitter:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Schémas alternatifs de la QR-facture : à quoi sert ce champ","description":"Le champ « schémas alternatifs » d’une QR-facture prend en charge d’autres moyens de paiement. Voici à quoi il sert et quand l’utiliser.","datePublished":"2026-09-10","dateModified":"2026-09-10","inLanguage":"fr-CH","author":{"@type":"Organization","name":"facturio.ch"},"publisher":{"@type":"Organization","name":"facturio.ch"},"mainEntityOfPage":"https://facturio.ch/blog/fr/schemas-alternatifs-de-la-qr-facture-a-quoi-sert-ce-champ/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"/>
+<link rel="stylesheet" href="/fr/blog/blog.css"/>
+<style>
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVC3DC5J');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PFMBN2Z6X"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9PFMBN2Z6X');
+</script>
+<!-- End Google Analytics -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVC3DC5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="sh-placeholder"></div>
+<script src="/assets/header-block.js" defer></script>
+<main class="blog">
+  <div class="container">
+    <a class="breadcrumb" href="/fr/blog/">← Tous les articles</a>
+    <article class="post">
+      <h1>Schémas alternatifs de la QR-facture : à quoi sert ce champ</h1>
+      <div class="meta">10 septembre 2026 · facturio.ch</div>
+      <p>La spécification de la QR-facture comprend un champ facultatif « schémas alternatifs ». Il sert à orienter le payeur vers des moyens de paiement autres que le virement bancaire.</p>
+<h2>Ce qu’il contient</h2>
+<p>Le champ peut contenir une instruction structurée pour un moyen de paiement alternatif, comme un paiement par carte ou une application de paiement mobile, en plus des données de paiement QR standard.</p>
+<p>Le contenu est structuré, et non du texte libre. Il suit un format défini afin qu’une application de paiement puisse l’interpréter, plutôt qu’une simple note que le payeur devrait lire.</p>
+<p>Le champ est facultatif sur la plupart des factures. Une QR-facture standard avec seulement l’IBAN, le montant et la référence est complète sans lui.</p>
+<p>Lorsqu’il est présent, le schéma alternatif offre une seconde façon de payer — par exemple, un lien ou une instruction pour un paiement via application — en plus du virement bancaire encodé dans les données principales.</p>
+<ul>
+<li>Renvoie à des moyens de paiement supplémentaires.</li>
+<li>Structuré, et non du texte libre.</li>
+<li>Facultatif sur la plupart des factures.</li>
+</ul>
+<h2>Quand en avez-vous besoin</h2>
+<p>La plupart des indépendants et des PME le laissent vide. Il devient pertinent si vous souhaitez que la QR-facture prenne aussi en charge un circuit de paiement par application ou par carte, en plus du virement bancaire.</p>
+<p>Si vous disposez d’une intégration avec un prestataire de paiement que le champ des schémas alternatifs peut représenter, vous pouvez l’utiliser pour proposer ce moyen sur la QR-facture.</p>
+<p>Pour un simple virement bancaire, le champ est sans objet. Il ne compte que lorsque vous disposez d’un second canal de paiement structuré que vous souhaitez encoder.</p>
+<p>L’utiliser sans véritable intégration est inutile : un payeur qui active le schéma alternatif et découvre que rien ne fonctionne est moins bien loti qu’un payeur qui ne l’a jamais vu.</p>
+<h2>Ce qu’il n’est pas</h2>
+<p>Le champ des schémas alternatifs n’est pas un emplacement pour du texte marketing ou des instructions de paiement. Il doit s’agir de données structurées sur lesquelles une application compatible peut agir.</p>
+<p>Il ne remplace pas un IBAN et une référence corrects. Les données de paiement principales doivent rester complètes et valides, car c’est ainsi que la plupart des payeurs paieront.</p>
+<p>Il n’est pas nécessaire pour que la QR-facture soit lisible. Une QR-facture avec un champ vide se lit parfaitement et constitue le cas normal pour la plupart des entreprises.</p>
+<p>Ne le confondez pas avec la référence ni avec le champ d’informations complémentaires, qui contiennent des données différentes et suivent des règles différentes.</p>
+<h2>Restez simple</h2>
+<p>À moins de disposer d’une intégration de paiement alternatif particulière, ignorez ce champ. Une QR-facture standard et propre, avec un IBAN et une référence corrects, suffit à la plupart des entreprises.</p>
+<p>Si votre logiciel de facturation prend en charge un schéma alternatif donné et que vous utilisez réellement ce moyen de paiement, activez-le délibérément et testez le résultat.</p>
+<p>Testez toute QR-facture qui utilise ce champ avant l’envoi. Un schéma alternatif mal formé peut rendre tout le code QR illisible, entraînant avec lui le paiement principal.</p>
+<p>En cas de doute, laissez-le vide. Le coût d’un champ inutilisé est nul, tandis que celui d’un champ défectueux est un paiement qui échoue.</p>
+<ul>
+<li>Laissez le champ vide sauf si vous avez une véritable intégration.</li>
+<li>Il doit s’agir de données structurées, pas de texte libre.</li>
+<li>Une QR-facture se lit très bien avec un champ vide.</li>
+<li>Testez toute QR-facture qui utilise ce champ avant l’envoi.</li>
+</ul>
+      <div class="cta">
+  <h3>Créez des QR-factures suisses conformes en quelques minutes</h3>
+  <p>facturio.ch génère des QR-factures conformes SIX avec chaque facture – pour que vous puissiez vous concentrer sur votre travail, pas sur la paperasse.</p>
+  <a href="https://app.facturio.ch/login" class="btn">Commencer gratuitement</a>
+</div>
+    </article>
+  </div>
+</main><footer class="site">
+  <div class="inner">
+    <span class="copy">© 2026 facturio.ch — Facturation QR suisse</span>
+    <span class="copy"><a href="https://strongwinds.ch" style="text-decoration:underline;text-underline-offset:2px">strongwinds.ch</a></span>
+    <a href="https://app.facturio.ch/login" class="grad" style="font-weight:600">Commencer gratuitement</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Le standard technique de la facture QR suisse (IG QR-bill) expliqué simplement — facturio.ch</title>
+<meta name="description" content="Derrière chaque facture QR se trouve un règlement officiel de SIX : les Swiss Implementation Guidelines. Ce que la spécification définit, ce qui s'applique depuis novembre 2025 et ce que la version 2.4 change pour vos factures."/>
+<link rel="alternate" hreflang="en" href="https://facturio.ch/en/blog/le-standard-technique-de-la-facture-qr-suisse-ig-qr-bill-explique-simplement/"/>
+<link rel="alternate" hreflang="de-CH" href="https://facturio.ch/de/blog/le-standard-technique-de-la-facture-qr-suisse-ig-qr-bill-explique-simplement/"/>
+<link rel="alternate" hreflang="fr-CH" href="https://facturio.ch/fr/blog/le-standard-technique-de-la-facture-qr-suisse-ig-qr-bill-explique-simplement/"/>
+<link rel="alternate" hreflang="it-CH" href="https://facturio.ch/it/blog/le-standard-technique-de-la-facture-qr-suisse-ig-qr-bill-explique-simplement/"/>
+<link rel="alternate" hreflang="x-default" href="https://facturio.ch/en/blog/le-standard-technique-de-la-facture-qr-suisse-ig-qr-bill-explique-simplement/"/>
+<link rel="canonical" href="https://facturio.ch/fr/blog/le-standard-technique-de-la-facture-qr-suisse-ig-qr-bill-explique-simplement/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="facturio.ch"/>
+<meta property="og:title" content="Le standard technique de la facture QR suisse (IG QR-bill) expliqué simplement — facturio.ch"/>
+<meta property="og:description" content="Derrière chaque facture QR se trouve un règlement officiel de SIX : les Swiss Implementation Guidelines. Ce que la spécification définit, ce qui s'applique depuis novembre 2025 et ce que la version 2.4 change pour vos factures."/>
+<meta property="og:url" content="https://facturio.ch/blog/fr/le-standard-technique-de-la-facture-qr-suisse-ig-qr-bill-explique-simplement/"/>
+<meta property="og:locale" content="fr"/>
+<meta property="og:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Le standard technique de la facture QR suisse (IG QR-bill) expliqué simplement — facturio.ch"/>
+<meta name="twitter:description" content="Derrière chaque facture QR se trouve un règlement officiel de SIX : les Swiss Implementation Guidelines. Ce que la spécification définit, ce qui s'applique depuis novembre 2025 et ce que la version 2.4 change pour vos factures."/>
+<meta name="twitter:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Le standard technique de la facture QR suisse (IG QR-bill) expliqué simplement","description":"Derrière chaque facture QR se trouve un règlement officiel de SIX : les Swiss Implementation Guidelines. Ce que la spécification définit, ce qui s'applique depuis novembre 2025 et ce que la version 2.4 change pour vos factures.","datePublished":"2026-10-16","dateModified":"2026-10-16","inLanguage":"fr-CH","author":{"@type":"Organization","name":"facturio.ch"},"publisher":{"@type":"Organization","name":"facturio.ch"},"mainEntityOfPage":"https://facturio.ch/blog/fr/le-standard-technique-de-la-facture-qr-suisse-ig-qr-bill-explique-simplement/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"/>
+<link rel="stylesheet" href="/fr/blog/blog.css"/>
+<style>
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVC3DC5J');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PFMBN2Z6X"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9PFMBN2Z6X');
+</script>
+<!-- End Google Analytics -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVC3DC5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="sh-placeholder"></div>
+<script src="/assets/header-block.js" defer></script>
+<main class="blog">
+  <div class="container">
+    <a class="breadcrumb" href="/fr/blog/">← Tous les articles</a>
+    <article class="post">
+      <h1>Le standard technique de la facture QR suisse (IG QR-bill) expliqué simplement</h1>
+      <div class="meta">16 octobre 2026 · facturio.ch</div>
+      <p>Derrière le carré noir de chaque facture QR se cache un règlement formel : les <a href="https://www.six-group.com/en/products-services/banking-services/payment-standardization/standards/qr-bill.html">Swiss Implementation Guidelines for the QR-bill</a>, maintenues par SIX Interbank Clearing. Voici ce que dit ce standard, sans jargon.</p>
+<h2>Ce qu'est le standard et qui l'écrit</h2>
+<p>La facture QR est définie par les « Swiss Implementation Guidelines for the QR-bill », en abrégé IG QR-bill, et toute facture QR doit <a href="https://www.six-group.com/dam/download/banking-services/standardization/qr-bill/ig-qr-bill-v2.3-en.pdf">respecter leurs dispositions</a>. Ces lignes directrices se présentent comme <a href="https://www.six-group.com/dam/download/banking-services/standardization/qr-bill/ig-qr-bill-v2.4-en.pdf">le standard de la facturation écrite en Suisse et au Liechtenstein</a>.</p>
+<p>Deux documents font le travail. Les lignes directrices définissent le contenu technique de la partie paiement avec le code QR suisse et du talon-réception ; le <a href="https://www.six-group.com/en/products-services/banking-services/payment-standardization/standards/qr-bill.html">Style Guide QR-bill</a>, en version 1.1 depuis le 1er janvier 2026, fixe la mise en page — polices, positions des champs et ligne de découpe.</p>
+<p>Le public visé en premier lieu, ce n'est pas vous, mais ceux qui conçoivent vos outils : la spécification s'adresse <a href="https://www.six-group.com/en/products-services/banking-services/payment-standardization/standards/qr-bill.html">en premier lieu aux émetteurs de factures</a>, mais aussi aux institutions financières, à leurs prestataires et aux développeurs de logiciels pour émetteurs, destinataires et banques.</p>
+<p>L'IG QR-bill est un standard de paiement, pas une loi — personne ne vous amende si vous vous en écartez. La sanction est pratique : un code non conforme est refusé par les scanners et le e-banking, le paiement est saisi à la main et vous êtes payé plus tard.</p>
+<h2>Ce que la spécification définit concrètement</h2>
+<p>Le document fixe les deux parties détachables : le talon-réception et la partie paiement avec le code QR suisse. Cette <a href="https://www.six-group.com/en/products-services/banking-services/payment-standardization/standards/qr-bill.html">partie paiement doit correspondre au format DIN A6 (105 × 148 mm)</a> et est perforée pour être détachée de la facture.</p>
+<p>Dans le code, les éléments de données suivent <a href="https://www.six-group.com/dam/download/banking-services/standardization/qr-bill/ig-qr-bill-v2.4-en.pdf">un ordre fixe</a> : type QR, version, jeu de caractères, compte (IBAN ou QR-IBAN), bénéficiaire, montant, débiteur, type de référence et informations complémentaires. Tout figure <a href="https://www.six-group.com/en/products-services/banking-services/billing-and-payments/qr-bill.html">aussi en clair sur la partie paiement</a> — le destinataire peut vérifier les données avant de payer.</p>
+<p>Les adresses doivent être structurées (type S) : nom, rue, numéro, code postal et localité sont des éléments distincts. Depuis le 22 novembre 2025, la version 2.3 n'admet <a href="https://www.six-group.com/en/products-services/banking-services/payment-standardization/standards/qr-bill.html">plus que la forme structurée</a>, et le jeu de caractères s'est enrichi d'accents et d'umlauts supplémentaires.</p>
+<p>Les champs facultatifs sont encadrés aussi : les informations de facturation et les procédures alternatives, par exemple eBill, utilisent <a href="https://www.six-group.com/dam/download/banking-services/standardization/qr-bill/ig-qr-bill-v2.3-en.pdf">un codage à deux chiffres</a> convenu avec SIX avant tout usage. Les factures imprimées exigent en outre <a href="https://www.six-group.com/en/products-services/banking-services/payment-standardization/standards/qr-bill.html">un papier de 80 à 100 g/m²</a>, blanc ou recyclé certifié.</p>
+<h2>Ce qui change avec la version 2.4 en novembre 2026</h2>
+<p>Le standard est versionné. La version 2.3 est en vigueur depuis le 22 novembre 2025 ; la version 2.4 suit avec la mise en production SIC du 13 novembre 2026 et s'applique <a href="https://www.six-group.com/dam/download/banking-services/standardization/qr-bill/ig-qr-bill-v2.4-en.pdf">dès le 14 novembre 2026</a>.</p>
+<p>Rien ne s'arrête du jour au lendemain : la version 2.3 reste valable jusqu'en novembre 2027. Pour la facturation en francs suisses, la version 2.4 n'entraîne <a href="https://www.six-group.com/dam/download/banking-services/standardization/qr-bill/ig-qr-bill-v2.4-en.pdf">explicitement aucune adaptation technique</a> — si vos clients paient en CHF, vous n'avez rien à refaire.</p>
+<p>Les changements visent les factures en euros. Comme euroSIC sera supprimé en novembre 2027, le QR-IBAN et la référence QR sont désormais <a href="https://www.six-group.com/dam/download/banking-services/standardization/qr-bill/ig-qr-bill-v2.4-en.pdf">réservés aux paiements en francs</a>. La facture QR en euros reste possible — uniquement avec un IBAN normal plus une référence créancier (SCOR, ISO 11649) ou un message non structuré.</p>
+<p>SIX recommande aux émetteurs de factures QR en euros avec QR-IBAN et référence QR de passer <a href="https://www.six-group.com/dam/download/banking-services/standardization/consultation/revision-ig-sps2026-en.pdf">dès 2026</a> à l'IBAN avec référence créancier. Si vous facturez des clients de l'UE depuis la Suisse, clarifiez ce point avec votre éditeur maintenant — pas en novembre 2027.</p>
+<h2>Rester conforme sans lire soixante pages</h2>
+<p>SIX ne contrôle pas la qualité de vos factures QR et aucun contrôle n'est imposé — une banque n'intervient <a href="https://www.six-group.com/en/products-services/banking-services/payment-standardization/standards/qr-bill.html">que si elle l'exige explicitement</a>. En pratique, le standard est appliqué par chaque scanner, chaque application bancaire et chaque guichet postal.</p>
+<p>Votre autocontrôle fait donc le travail : générez des factures QR uniquement avec un logiciel qui implémente la version courante et testez la première facture — décodez le code QR et comparez-le aux données imprimées. SIX met à disposition des outils de validation pour exactement cet autocontrôle.</p>
+<p>La qualité des données prime sur la mise en forme. Un code avec un IBAN périmé ou une référence mal saisie échoue même si le document semble parfait : tenez vos coordonnées bancaires, votre adresse et votre format de référence à jour dans l'outil concerné. Le texte imprimé et les données codées doivent toujours coïncider.</p>
+<p>Enfin, intégrez le calendrier des versions à votre routine annuelle : la version 2.4 s'applique en novembre 2026, euroSIC prendra fin en 2027 — qui facture en CHF peut presque tout ignorer, qui facture en euros a intérêt à agir tôt. facturio génère des factures QR conformes aux Swiss Implementation Guidelines actuelles — le standard reste l'affaire de votre logiciel, pas la vôtre.</p>
+      <div class="cta">
+  <h3>Créez des QR-factures suisses conformes en quelques minutes</h3>
+  <p>facturio.ch génère des QR-factures conformes SIX avec chaque facture – pour que vous puissiez vous concentrer sur votre travail, pas sur la paperasse.</p>
+  <a href="https://app.facturio.ch/login" class="btn">Commencer gratuitement</a>
+</div>
+    </article>
+  </div>
+</main><footer class="site">
+  <div class="inner">
+    <span class="copy">© 2026 facturio.ch — Facturation QR suisse</span>
+    <span class="copy"><a href="https://strongwinds.ch" style="text-decoration:underline;text-underline-offset:2px">strongwinds.ch</a></span>
+    <a href="https://app.facturio.ch/login" class="grad" style="font-weight:600">Commencer gratuitement</a>
+  </div>
+</footer>
+
+</body>
+</html>

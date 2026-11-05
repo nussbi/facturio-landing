@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Comment tester une QR-facture avant de l’envoyer — facturio.ch</title>
+<meta name="description" content="Une QR-facture qui ne se lit pas est un paiement qui échoue. Voici comment vérifier la vôtre avant qu’elle n’atteigne le client."/>
+<link rel="alternate" hreflang="en" href="https://facturio.ch/blog/how-to-test-a-qr-bill-before-you-send-it/"/><link rel="alternate" hreflang="de-CH" href="https://facturio.ch/blog/de/so-testest-du-eine-qr-rechnung-bevor-du-sie-verschickst/"/><link rel="alternate" hreflang="fr-CH" href="https://facturio.ch/blog/fr/comment-tester-une-qr-facture-avant-de-l-envoyer/"/><link rel="alternate" hreflang="it-CH" href="https://facturio.ch/blog/it/come-testare-una-qr-fattura-prima-di-inviarla/"/><link rel="alternate" hreflang="x-default" href="https://facturio.ch/blog/how-to-test-a-qr-bill-before-you-send-it/"/><link rel="canonical" href="https://facturio.ch/blog/fr/comment-tester-une-qr-facture-avant-de-l-envoyer/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="facturio.ch"/>
+<meta property="og:title" content="Comment tester une QR-facture avant de l’envoyer — facturio.ch"/>
+<meta property="og:description" content="Une QR-facture qui ne se lit pas est un paiement qui échoue. Voici comment vérifier la vôtre avant qu’elle n’atteigne le client."/>
+<meta property="og:url" content="https://facturio.ch/blog/fr/comment-tester-une-qr-facture-avant-de-l-envoyer/"/>
+<meta property="og:locale" content="fr-CH"/>
+<meta property="og:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Comment tester une QR-facture avant de l’envoyer — facturio.ch"/>
+<meta name="twitter:description" content="Une QR-facture qui ne se lit pas est un paiement qui échoue. Voici comment vérifier la vôtre avant qu’elle n’atteigne le client."/>
+<meta name="twitter:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Comment tester une QR-facture avant de l’envoyer","description":"Une QR-facture qui ne se lit pas est un paiement qui échoue. Voici comment vérifier la vôtre avant qu’elle n’atteigne le client.","datePublished":"2026-09-09","dateModified":"2026-09-09","inLanguage":"fr-CH","author":{"@type":"Organization","name":"facturio.ch"},"publisher":{"@type":"Organization","name":"facturio.ch"},"mainEntityOfPage":"https://facturio.ch/blog/fr/comment-tester-une-qr-facture-avant-de-l-envoyer/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"/>
+<link rel="stylesheet" href="/blog/blog.css"/>
+<style>
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVC3DC5J');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PFMBN2Z6X"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9PFMBN2Z6X');
+</script>
+<!-- End Google Analytics -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVC3DC5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="sh-placeholder"></div>
+<script src="/assets/header-block.js" defer></script>
+<main class="blog">
+  <div class="container">
+    <a class="breadcrumb" href="/blog/fr/">← Tous les articles</a>
+    <article class="post">
+      <h1>Comment tester une QR-facture avant de l’envoyer</h1>
+      <div class="meta">9 septembre 2026 · facturio.ch</div>
+      <p>Une QR-facture paraît simple, mais un seul champ erroné peut la rendre illisible. Testez-la avant de l’envoyer — le coût d’un code QR défectueux est un paiement retardé.</p>
+<h2>Ce qu’il faut vérifier visuellement</h2>
+<p>Comparez les informations de paiement en texte clair avec les données du code QR : l’IBAN, le nom du bénéficiaire, le montant, la devise et la référence doivent correspondre exactement. Les données imprimées sont ce que le client vérifie.</p>
+<p>Vérifiez le nom du bénéficiaire par rapport au nom de votre compte enregistré. Un écart entre le nom imprimé et le titulaire du compte peut entraîner le rejet du paiement.</p>
+<p>Vérifiez que la référence correspond à la facture. Une QR-facture dont la référence renvoie à une autre facture sera rapprochée du mauvais document.</p>
+<p>Examinez les champs d’adresse. Depuis fin 2025, les adresses structurées sont requises dans les données QR ; une adresse combinée qui se lit encore aujourd’hui peut donc être un signe d’alerte.</p>
+<ul>
+<li>IBAN et nom du bénéficiaire.</li>
+<li>Montant et devise.</li>
+<li>Référence, le cas échéant.</li>
+<li>Adresses structurées (et non combinées).</li>
+</ul>
+<h2>Scannez-la vous-même</h2>
+<p>Ouvrez votre application bancaire et scannez le code QR. Si l’application lit le bon montant et la bonne référence, cela fonctionne. Sinon, quelque chose est erroné dans les données sous-jacentes, même si tout semble correct sur papier.</p>
+<p>Scannez avec plusieurs applications si possible. Des applications différentes révèlent des erreurs différentes, et l’acceptation du code par une application ne garantit pas que toutes les banques l’accepteront.</p>
+<p>Observez ce que l’application préremplit. Si le montant, l’IBAN ou le bénéficiaire affiché diffère de ce qui est imprimé, les données QR et le texte imprimé sont désynchronisés, et vous devez corriger les données sources.</p>
+<p>Faites ce test sur le PDF réel que vous allez envoyer, et non sur un brouillon. C’est le code QR rendu qui compte, et il peut différer de ce que montre votre aperçu.</p>
+<h2>Validez directement les données</h2>
+<p>Le contrôle le plus fiable consiste à valider les données sous-jacentes, et non la simple image. Des outils et des bibliothèques peuvent décoder la charge utile du QR et vérifier chaque champ par rapport à la spécification.</p>
+<p>Vérifiez que l’IBAN est au bon format et que la référence passe sa validation par chiffre de contrôle. Une référence qui échoue à sa propre somme de contrôle ne sera jamais rapprochée.</p>
+<p>Pour les factures en EUR, confirmez que l’IBAN est un IBAN standard, et non un QR-IBAN, puisque le changement de février 2026 a supprimé les QR-IBAN des QR-factures en EUR.</p>
+<p>La charge utile de la QR-facture impose des limites définies sur la longueur des champs et les caractères. Un champ trop long ou contenant des caractères invalides peut rendre le code illisible même lorsque les données sont correctes.</p>
+<h2>Intégrez le test à votre routine</h2>
+<p>Intégrez une vérification rapide à votre processus : chaque facture fait l’objet d’un contrôle visuel et, si possible, d’une lecture par application avant l’envoi. Les minutes consacrées vous épargnent plus tard un appel de relance.</p>
+<p>facturio génère les QR-factures à partir de données structurées et vous permet de prévisualiser le résultat, afin de repérer un IBAN ou une référence erronés avant que la facture ne quitte votre boîte d’envoi.</p>
+<p>Conservez une trace des données validées, afin de pouvoir montrer, si un client signale ultérieurement un problème de lecture, que la QR-facture était correcte au moment de l’envoi.</p>
+<p>Considérez un test échoué comme un problème de données à corriger à la source, et non comme un élément à rafistoler sur le PDF. Corrigez la fiche client ou la facture, puis régénérez la QR-facture.</p>
+<ul>
+<li>Vérifiez le texte imprimé par rapport aux données QR.</li>
+<li>Scannez avec une application bancaire avant l’envoi.</li>
+<li>Validez le format de l’IBAN et les chiffres de contrôle de la référence.</li>
+<li>Corrigez les erreurs à la source, puis régénérez.</li>
+</ul>
+      <div class="cta">
+  <h3>Créez des QR-factures suisses conformes en quelques minutes</h3>
+  <p>facturio.ch génère des QR-factures conformes SIX avec chaque facture – pour que vous puissiez vous concentrer sur votre travail, pas sur la paperasse.</p>
+  <a href="https://app.facturio.ch/login" class="btn">Commencer gratuitement</a>
+</div>
+    </article>
+  </div>
+</main><footer class="site">
+  <div class="inner">
+    <span class="copy">© 2026 facturio.ch — Facturation QR suisse</span>
+    <span class="copy"><a href="https://strongwinds.ch" style="text-decoration:underline;text-underline-offset:2px">strongwinds.ch</a></span>
+    <a href="https://app.facturio.ch/login" class="grad" style="font-weight:600">Commencer gratuitement</a>
+  </div>
+</footer>
+
+</body>
+</html>

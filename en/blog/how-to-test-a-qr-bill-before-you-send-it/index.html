@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>How to Test a QR-Bill Before You Send It — facturio.ch</title>
+<meta name="description" content="A QR-bill that does not scan is a payment that fails. Here is how to verify yours before it reaches the client."/>
+<link rel="alternate" hreflang="en" href="https://facturio.ch/blog/how-to-test-a-qr-bill-before-you-send-it/"/><link rel="alternate" hreflang="de-CH" href="https://facturio.ch/blog/de/so-testest-du-eine-qr-rechnung-bevor-du-sie-verschickst/"/><link rel="alternate" hreflang="fr-CH" href="https://facturio.ch/blog/fr/comment-tester-une-qr-facture-avant-de-l-envoyer/"/><link rel="alternate" hreflang="it-CH" href="https://facturio.ch/blog/it/come-testare-una-qr-fattura-prima-di-inviarla/"/><link rel="alternate" hreflang="x-default" href="https://facturio.ch/blog/how-to-test-a-qr-bill-before-you-send-it/"/><link rel="canonical" href="https://facturio.ch/blog/how-to-test-a-qr-bill-before-you-send-it/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="facturio.ch"/>
+<meta property="og:title" content="How to Test a QR-Bill Before You Send It — facturio.ch"/>
+<meta property="og:description" content="A QR-bill that does not scan is a payment that fails. Here is how to verify yours before it reaches the client."/>
+<meta property="og:url" content="https://facturio.ch/blog/how-to-test-a-qr-bill-before-you-send-it/"/>
+<meta property="og:locale" content="en-US"/>
+<meta property="og:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="How to Test a QR-Bill Before You Send It — facturio.ch"/>
+<meta name="twitter:description" content="A QR-bill that does not scan is a payment that fails. Here is how to verify yours before it reaches the client."/>
+<meta name="twitter:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Test a QR-Bill Before You Send It","description":"A QR-bill that does not scan is a payment that fails. Here is how to verify yours before it reaches the client.","datePublished":"2026-09-09","dateModified":"2026-09-09","inLanguage":"en","author":{"@type":"Organization","name":"facturio.ch"},"publisher":{"@type":"Organization","name":"facturio.ch"},"mainEntityOfPage":"https://facturio.ch/blog/how-to-test-a-qr-bill-before-you-send-it/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"/>
+<link rel="stylesheet" href="/blog/blog.css"/>
+<style>
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVC3DC5J');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PFMBN2Z6X"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9PFMBN2Z6X');
+</script>
+<!-- End Google Analytics -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVC3DC5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="sh-placeholder"></div>
+<script src="/assets/header-block.js" defer></script>
+<main class="blog">
+  <div class="container">
+    <a class="breadcrumb" href="/blog/">← All articles</a>
+    <article class="post">
+      <h1>How to Test a QR-Bill Before You Send It</h1>
+      <div class="meta">September 9, 2026 · facturio.ch</div>
+      <p>A QR-bill looks simple, but a single wrong field can make it unscannable. Test it before you send it — the cost of a broken QR code is a delayed payment.</p>
+<h2>What to check visually</h2>
+<p>Compare the plain-text payment information against the QR code’s data: IBAN, payee name, amount, currency and reference must match exactly. The printed data is what the customer verifies.</p>
+<p>Check the payee name against your registered account name. A mismatch between the printed name and the account holder can cause the payment to be rejected.</p>
+<p>Verify the reference matches the invoice. A QR-bill whose reference points to a different invoice will reconcile to the wrong document.</p>
+<p>Look at the address fields. Since late 2025, structured addresses are required in the QR data, so a combined address that still scans today may be a warning sign.</p>
+<ul>
+<li>IBAN and payee name.</li>
+<li>Amount and currency.</li>
+<li>Reference, if any.</li>
+<li>Structured (not combined) addresses.</li>
+</ul>
+<h2>Scan it yourself</h2>
+<p>Open your banking app and scan the QR code. If the app reads the correct amount and reference, it works. If not, something in the underlying data is wrong, even if it looks fine on paper.</p>
+<p>Scan with more than one app if you can. Different apps expose different errors, and one app accepting the code does not guarantee every bank will.</p>
+<p>Watch what the app pre-fills. If the amount, IBAN or payee that appears differs from what is printed, the QR data and the printed text are out of sync, and you must fix the source data.</p>
+<p>Do this test on the actual PDF you will send, not a draft. The rendered QR code is what matters, and it can differ from what your preview shows.</p>
+<h2>Validate the data directly</h2>
+<p>The most reliable check is to validate the underlying data, not just the image. Tools and libraries can decode the QR payload and check each field against the specification.</p>
+<p>Check that the IBAN is in the correct format and that the reference passes its check-digit validation. A reference that fails its own checksum will never reconcile.</p>
+<p>For EUR invoices, confirm the IBAN is a standard IBAN, not a QR-IBAN, since the February 2026 change removed QR-IBANs from EUR QR-bills.</p>
+<p>The QR-bill payload has defined limits on field lengths and characters. A field that is too long or contains invalid characters can make the code unscannable even when the data is correct.</p>
+<h2>Make testing part of your routine</h2>
+<p>Build a quick check into your process: every invoice gets a visual scan and, where possible, an app scan before it is sent. The minutes you spend save you a chasing call later.</p>
+<p>facturio generates QR-bills from structured data and lets you preview the result, so you can catch a wrong IBAN or reference before the invoice ever leaves your outbox.</p>
+<p>Keep a record of the data you validated, so that if a client later reports a scanning problem you can show the QR-bill was correct at the time of sending.</p>
+<p>Treat a failed test as a data problem to fix at the source, not something to patch on the PDF. Correct the client record or the invoice, then regenerate the QR-bill.</p>
+<ul>
+<li>Check printed text against the QR data.</li>
+<li>Scan with a banking app before sending.</li>
+<li>Validate IBAN format and reference check digits.</li>
+<li>Fix errors at the source, then regenerate.</li>
+</ul>
+      <div class="cta">
+  <h3>Create compliant Swiss QR-bills in minutes</h3>
+  <p>facturio.ch generates SIX-compliant QR-bills with every invoice — so you can focus on your work, not the paperwork.</p>
+  <a href="https://app.facturio.ch/login" class="btn">Start free</a>
+</div>
+    </article>
+  </div>
+</main><footer class="site">
+  <div class="inner">
+    <span class="copy">© 2026 facturio.ch — Swiss QR invoicing</span>
+    <span class="copy"><a href="https://strongwinds.ch" style="text-decoration:underline;text-underline-offset:2px">strongwinds.ch</a></span>
+    <a href="https://app.facturio.ch/login" class="grad" style="font-weight:600">Start for Free</a>
+  </div>
+</footer>
+
+</body>
+</html>

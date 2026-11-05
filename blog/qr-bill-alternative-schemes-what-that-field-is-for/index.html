@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QR-Bill Alternative Schemes: What That Field Is For — facturio.ch</title>
+<meta name="description" content="The “alternative schemes” field on a QR-bill supports other payment methods. Here is what it does and when to use it."/>
+<link rel="alternate" hreflang="en" href="https://facturio.ch/blog/qr-bill-alternative-schemes-what-that-field-is-for/"/><link rel="alternate" hreflang="de-CH" href="https://facturio.ch/blog/de/alternative-verfahren-der-qr-rechnung-wozu-dieses-feld-dient/"/><link rel="alternate" hreflang="fr-CH" href="https://facturio.ch/blog/fr/schemas-alternatifs-de-la-qr-facture-a-quoi-sert-ce-champ/"/><link rel="alternate" hreflang="it-CH" href="https://facturio.ch/blog/it/schemi-alternativi-della-qr-fattura-a-cosa-serve-quel-campo/"/><link rel="alternate" hreflang="x-default" href="https://facturio.ch/blog/qr-bill-alternative-schemes-what-that-field-is-for/"/><link rel="canonical" href="https://facturio.ch/blog/qr-bill-alternative-schemes-what-that-field-is-for/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="facturio.ch"/>
+<meta property="og:title" content="QR-Bill Alternative Schemes: What That Field Is For — facturio.ch"/>
+<meta property="og:description" content="The “alternative schemes” field on a QR-bill supports other payment methods. Here is what it does and when to use it."/>
+<meta property="og:url" content="https://facturio.ch/blog/qr-bill-alternative-schemes-what-that-field-is-for/"/>
+<meta property="og:locale" content="en-US"/>
+<meta property="og:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="QR-Bill Alternative Schemes: What That Field Is For — facturio.ch"/>
+<meta name="twitter:description" content="The “alternative schemes” field on a QR-bill supports other payment methods. Here is what it does and when to use it."/>
+<meta name="twitter:image" content="https://facturio.ch/assets/og-facturio.png"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"QR-Bill Alternative Schemes: What That Field Is For","description":"The “alternative schemes” field on a QR-bill supports other payment methods. Here is what it does and when to use it.","datePublished":"2026-09-10","dateModified":"2026-09-10","inLanguage":"en","author":{"@type":"Organization","name":"facturio.ch"},"publisher":{"@type":"Organization","name":"facturio.ch"},"mainEntityOfPage":"https://facturio.ch/blog/qr-bill-alternative-schemes-what-that-field-is-for/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"/>
+<link rel="stylesheet" href="/blog/blog.css"/>
+<style>
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVC3DC5J');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PFMBN2Z6X"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9PFMBN2Z6X');
+</script>
+<!-- End Google Analytics -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVC3DC5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="sh-placeholder"></div>
+<script src="/assets/header-block.js" defer></script>
+<main class="blog">
+  <div class="container">
+    <a class="breadcrumb" href="/blog/">← All articles</a>
+    <article class="post">
+      <h1>QR-Bill Alternative Schemes: What That Field Is For</h1>
+      <div class="meta">September 10, 2026 · facturio.ch</div>
+      <p>The QR-bill specification includes an optional “alternative schemes” field. It exists to point the payer toward payment methods beyond the bank transfer.</p>
+<h2>What it carries</h2>
+<p>The field can hold a structured instruction for an alternative payment method, such as a card payment or a mobile payment app, alongside the standard QR payment data.</p>
+<p>The content is structured, not free text. It follows a defined format so a paying app can interpret it, rather than a loose note the payer has to read.</p>
+<p>The field is optional on most invoices. A standard QR-bill with just the IBAN, amount and reference is complete without it.</p>
+<p>When present, the alternative scheme offers a second way to pay — for example, a link or instruction for an app-based payment — in addition to the bank transfer encoded in the main data.</p>
+<ul>
+<li>Points to additional payment methods.</li>
+<li>Structured, not free text.</li>
+<li>Optional on most invoices.</li>
+</ul>
+<h2>When you need it</h2>
+<p>Most freelancers and SMEs leave it empty. It becomes relevant if you want the QR-bill to also support a specific app-based or card payment flow in addition to the bank transfer.</p>
+<p>If you have an integration with a payment provider that the alternative-schemes field can represent, you may use it to offer that method on the QR-bill.</p>
+<p>For a plain bank transfer, the field is irrelevant. It only matters when you have a second, structured payment channel you want to encode.</p>
+<p>Using it without a real integration is pointless: a payer who taps the alternative scheme and finds nothing working is worse off than a payer who never saw it.</p>
+<h2>What it is not</h2>
+<p>The alternative-schemes field is not a place for marketing text or payment instructions. It must be structured data that a compatible app can act on.</p>
+<p>It is not a substitute for a correct IBAN and reference. The primary payment data still has to be complete and valid, because that is how most payers will pay.</p>
+<p>It is not required for the QR-bill to scan. A QR-bill with the field empty scans perfectly well and is the normal case for most businesses.</p>
+<p>Do not confuse it with the reference or the additional-information field, which carry different data and follow different rules.</p>
+<h2>Keep it simple</h2>
+<p>Unless you have a specific alternative payment integration, ignore this field. A clean, standard QR-bill with a correct IBAN and reference is all most businesses need.</p>
+<p>If your invoicing software supports a particular alternative scheme and you actually use that payment method, enable it deliberately and test the result.</p>
+<p>Test any QR-bill that uses the field before sending. A malformed alternative scheme can make the whole QR code unscannable, taking the primary payment down with it.</p>
+<p>When in doubt, leave it empty. The cost of an unused field is zero, while the cost of a broken one is a payment that fails.</p>
+<ul>
+<li>Leave the field empty unless you have a real integration.</li>
+<li>It must be structured data, not free text.</li>
+<li>A QR-bill scans fine with the field empty.</li>
+<li>Test any QR-bill that uses the field before sending.</li>
+</ul>
+      <div class="cta">
+  <h3>Create compliant Swiss QR-bills in minutes</h3>
+  <p>facturio.ch generates SIX-compliant QR-bills with every invoice — so you can focus on your work, not the paperwork.</p>
+  <a href="https://app.facturio.ch/login" class="btn">Start free</a>
+</div>
+    </article>
+  </div>
+</main><footer class="site">
+  <div class="inner">
+    <span class="copy">© 2026 facturio.ch — Swiss QR invoicing</span>
+    <span class="copy"><a href="https://strongwinds.ch" style="text-decoration:underline;text-underline-offset:2px">strongwinds.ch</a></span>
+    <a href="https://app.facturio.ch/login" class="grad" style="font-weight:600">Start for Free</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,10 +1,6 @@
 # Dependencies
 node_modules/
 
-# Generated blog output (built from scripts/generate-blog.cjs)
-blog/
-_redirects
-
 # Environment & secrets
 .env
 .env.*
