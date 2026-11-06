@@ -151,6 +151,11 @@
 
   placeholder.innerHTML = html;
 
+  /* Flag for the legacy /assets/header-i18n.js shim: when this injector
+     has already wired the dropdown, that file must not run a second time
+     (double-binding would toggle the menu open then straight back shut). */
+  window.__shHeaderReady = true;
+
   /* ---------------- i18n + language dropdown (inlined) ---------------- */
   var I18N = {
     en: { "nav.about": "About", "nav.blog": "Blog", "nav.signup": "Sign up", "nav.signin": "Log in" },
