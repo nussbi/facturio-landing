@@ -404,5 +404,32 @@ for (const lang of ['de', 'fr', 'it']) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Guard: /blog/blog.css must stay a FILE, never a directory.
+//
+// A previous "restore from live deployment" import created de/blog/blog.css/,
+// fr/blog/blog.css/ and it/blog/blog.css/ as DIRECTORIES (each holding an
+// index.html). Cloudflare Pages then resolved /de/blog/blog.css to the
+// directory, 308-redirected to /de/blog/blog.css/, and served HTML with
+// `content-type: text/html` — so every legacy-tree page lost its stylesheet.
+//
+// Fail the build loudly if that shape ever comes back.
+// ---------------------------------------------------------------------------
+const cssFile = path.join(BLOG, 'blog.css');
+if (fs.existsSync(cssFile) && !fs.statSync(cssFile).isFile()) {
+  throw new Error(
+    `blog.css must be a file, but ${cssFile} is a directory. ` +
+    `Remove it (git rm -r) — it shadows the stylesheet and breaks every blog page.`
+  );
+}
+for (const lang of ['de', 'fr', 'it']) {
+  const shadow = path.join(BLOG, lang, 'blog.css');
+  if (fs.existsSync(shadow)) {
+    throw new Error(
+      `Stray ${shadow} shadows the stylesheet. Blog pages must link /blog/blog.css.`
+    );
+  }
+}
+
 console.log('Wrote', allPosts.length, 'posts x 4 localized URL languages + indexes to', BLOG);
 console.log('Wrote', redirects.length, 'legacy URL redirects to', path.join(DIR, '_redirects'));
