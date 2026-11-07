@@ -1,39 +1,23 @@
 # facturio-landing
 
-Marketing site and SEO blog for **facturio.ch** — a static site (HTML/CSS/JS) deployed on **Cloudflare Pages**.
+Static marketing site, localized homepages and SEO blog for **facturio.ch**, deployed on Cloudflare Pages.
 
-## Contents
+## Unified design
 
-```
-.
-├── index.html                 # Landing page (hero, dashboard preview, pricing, CTA)
-├── scripts/
-│   └── generate-blog.cjs      # Static blog generator (EN/DE/FR/IT, hreflang, JSON-LD, redirects)
-└── content/
-    └── topics.md              # SEO keyword/topic queue driving the daily blog job
-```
+The 2026-11-07 refresh follows the user-provided Base44 reference: Inter typography, the receipt logo, indigo/blue/cyan gradients, white cards and consistent spacing. Reference illustrations and fonts are self-hosted. No Base44 runtime, badge or backend is embedded.
 
-## Landing page
+- `assets/facturio-brand.css`: shared navigation, footer, typography and responsive editorial styling.
+- `assets/reference-design.css`: reference-derived homepage presentation.
+- `assets/header-block.js`: accessible language/mobile menus, staging destinations and FAQ accordion behavior.
+- `assets/facturio-logo.svg`, `assets/inter-latin.woff2`, `assets/reference-qr-*.svg`: self-hosted assets.
+- Root and EN/DE/FR/IT homepages: fully rendered localized content; the data-export FAQ is marked Coming soon.
 
-Single-file `index.html` with client-side i18n (EN/DE/FR/IT), a language switcher, GTM + GA4, and JSON-LD (`SoftwareApplication`, `WebSite`, `Organization`). The shared header is injected by `/assets/header-block.js`.
+All 1,176 existing HTML pages share the design. Existing article text, canonical URLs and structured data remain; invalid language alternates are repaired using verified counterpart pages.
 
-## Blog generator
+## Analytics and publishing
 
-`scripts/generate-blog.cjs` builds the localized blog from a `posts.js` source plus `translations/{de,fr,it}.js`:
+GA4 `G-9PFMBN2Z6X` remains present on every HTML page. GTM `GTM-KVC3DC5J` is retained. `_redirects` preserves legacy localized legal URLs and application aliases. Staging navigation stays on staging domains.
 
-- Emits `/blog/` (EN) and `/blog/{de,fr,it}/` with **localized slugs**.
-- Writes `hreflang` alternates + `x-default`, canonical, Open Graph/Twitter tags and `BlogPosting` JSON-LD.
-- Generates `_redirects` (301) preserving every legacy shared-slug URL.
-- Fails loudly on slug collisions or redirects that would shadow a live page.
+`assets/design-manifest.json` records source paths and SHA256 checksums. `assets/deployment-redirects.txt` is the source copy of the Cloudflare-reserved redirects file. The manual source-sync workflow accepts only immutable Facturio Pages deployment hosts, verifies every file checksum, and aborts on concurrent repository changes before committing the deployed source.
 
-> The generator expects `posts.js` and `translations/*.js` alongside it (not included in this snapshot). `content/topics.md` is the evergreen keyword queue the daily job consumes.
-
-## Deploy (Cloudflare Pages)
-
-- Build command: *(none — static)*
-- Output directory: `/` (repo root)
-- Custom domain: `facturio.ch`
-
-## Security
-
-No secrets are committed. See [SECURITY.md](./SECURITY.md).
+The separate application Worker handles authentication, signing and private customer portals. The original blog generator still requires missing `scripts/posts.js` and translation modules; those inputs are not recreated or guessed here.
